@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Gradient Background */
+body {
+    background: linear-gradient(135deg, #1e3c72, #2a2a2a);
+    color: #fff;
+    font-family: "PT Serif", serif;
+}
+
+/* Navigation Fix */
+.navlist {
+    list-style: none;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    display: flex;
+    gap: 20px;
+}
+
+.navlist li {
+    display: inline;
+}
+
+.navlist a {
+    text-decoration: none;
+    color: #ddd; /* Lightened for better visibility */
+    font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    transition: color 0.3s ease-in-out;
+}
+
+.navlist a:hover {
+    color: #5DB9EE; /* Light Blue hover effect */
+}
+
+/* Services Section */
+.services-container, .contact-container {
+    width: 100%;
+    padding: 5rem 3rem;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #5DB9EE;
+    margin-bottom: 2rem;
+}
+
+/* Services Grid */
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.service-box {
+    background: rgba(38, 37, 37, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.service-box:hover {
+    transform: scale(1.05);
+}
+
+.service-box i {
+    font-size: 3rem;
+    color: #5DB9EE;
+    margin-bottom: 1rem;
+}
+
+.service-box h2 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.service-box p {
+    color: #bbb;
+    font-size: 1rem;
+}
+
+/* Contact Form */
+.contact-container {
+    background: #262525;
+    padding: 4rem 3rem;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: #fff;
+    outline: none;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 120px;
+}
+
+.contact-form button {
+    background: #5DB9EE;
+    color: #262525;
+    font-size: 1.1rem;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #fff;
+    color: #262525;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navlist {
+        top: 10px;
+        right: 20px;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .services-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .service-box {
+        width: 90%;
+    }
+}
